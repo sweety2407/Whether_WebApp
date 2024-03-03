@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .tracking-in-expand-fwd {
+	        -webkit-animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
+	        animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
+}
+
+    </style>
+</head>
+<body>
+    <div class="mdiv">
+        <div class="weather_app">
+            <h2 align="center" class="wed tracking-in-expand-fwd">WEATHER FORECAST</h2>
+            <div class="ip">
+                <input type="text" id="userText" placeholder="Enter City">
+                <button onclick="getWeatherData()"><img src="search_8094123.png" alt="" height="27px"></button>
+            </div>
+            <br><br>
+
+            <div class="info" align="center">
+                <img src="sun_rise.png" alt="WEATHER" srcset="" class="weather_img">
+                <h1 id="temp">27°C</h1>
+                <h2 id="city" >PUNE</h2>
+            </div>
+
+            <div class="info2">
+                <div class="humditiy">
+                    <img src="humidity.png" alt="humditiy" class="humi"><br>
+                    <h3>HUMIDITY</h3>
+                    <h4 id="humidity_info">50%</h4>
+                </div>
+
+                <div class="wind">
+                    <img src="wind.png" alt="humditiy" class="humi"><br>
+                    <h3>WIND</h3>
+                    <h4 id="wind_info">4 km/h</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
